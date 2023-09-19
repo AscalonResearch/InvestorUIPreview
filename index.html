@@ -14,7 +14,7 @@
         .iframe-container {
             position: relative;
             width: 100%;
-            padding-top: 177%; /* Adjust this value to use more vertical space */
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
         }
         iframe {
             position: absolute;
@@ -26,7 +26,8 @@
         }
         @media (max-width: 768px) {
             .iframe-container {
-                padding-top: 100%; /* Full height on mobile */
+                padding-top: 0; /* Remove padding on mobile */
+                height: calc(100vh - 20px); /* Adjust height for mobile screens */
             }
         }
     </style>
